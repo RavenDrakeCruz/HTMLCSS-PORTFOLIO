@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Drake's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span>Drake Cruz</span>
+                </a>
+            </div>
+            <div class="links">
+                <div class="link"><a href="index.html">About</a></div>    
+                <div class="link"><a href="skills.html">Skills</a></div>
+                <div class="link"><a href="projects.html">Projects</a></div>      
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="main-container">
+            
+            <div class="image" data-aos="zoom-in-right">
+                <img src="Drake.jpg" alt="Drake's Image">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left">Hey, I'm <span>Drake</span></h1>
+                <div class="typewriter" data-aos="fade-left">I'm a <span></span></div>
+
+                <!-- Updated About Me Section -->
+                <h2>About Me</h2>
+                <div class="about-container" data-aos="fade-up">
+                    <div class="about-box">
+                        <p>
+                            I am a <span class="highlight">Computer Science Student</span> at <b>Pamantasan ng Lungsod ng Pasig</b> with a passion for 
+                            <span class="highlight">software development</span>, <span class="highlight">game development</span>, and <span class="highlight">machine learning</span>.
+                            I am skilled in <b>PHP, MySQL, HTML, CSS, JavaScript, Laravel, Blender</b>, and <b>IT technical support</b>. I love tackling complex problems and 
+                            bringing creative ideas to life with technology. I am always eager to apply my <span class="highlight">technical skills</span>, 
+                            <span class="highlight">problem-solving abilities</span>, and <span class="highlight">creativity</span> to real-world projects.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/RavenDrakeCruz" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/raven-drake-cruz-549475213/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:ravendrakecruz19@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <a href="Cruz_Resume.pdf" download="Cruz_Resume.pdf">
+                    <button>Download Resume</button>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+
+        function hamburg() {
+            document.querySelector(".dropdown").style.transform = "translateY(0px)";
+        }
+        function cancel() {
+            document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>
