@@ -589,7 +589,7 @@ footer {
     .project-box {
         width: 100%;
         height: auto;
-        font-size: 8px;
+        font-size: 10px;
         text-align: justify;
         font-style: italic;
 
@@ -641,7 +641,7 @@ footer {
 @media (max-width: 768px) {
     .nav-container .links {
         display: none;
-        flex-direction: column;
+        flex-direction:column;
         position: fixed; 
         top: 50px;
         right: 20px; 
