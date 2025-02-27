@@ -580,9 +580,28 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    .project-img {
+    .project-img, .video-container iframe {
+        width: 100%; /* Makes sure both the image and video are responsive */
+        max-width: 600px; /* Adjust as needed */
+        height: auto; /* Keeps aspect ratio for images */
+        display: block;
+        margin: auto; /* Centers both elements */
+    }
+    
+    .video-container {
+        position: relative;
         width: 100%;
-        height: auto;
+        max-width: 600px;
+        padding-top: 56.25%; /* 16:9 aspect ratio */
+        margin: auto;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .project-box {
@@ -592,20 +611,6 @@ footer {
         text-align: justify;
         font-style: italic;
 
-    }
-
-    .video-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        max-width: 5000px; /* Adjust as needed */
-        margin: auto; /* Centering */
-    }
-    
-    .video-container iframe {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9; /* Ensures proper aspect ratio */
     }
 
     .logo {
