@@ -573,6 +573,7 @@ footer {
 @media (max-width: 768px) {
     body {
         font-size: 14px;
+        position: absolute;
     }
 
     .projects-container {
@@ -590,10 +591,12 @@ footer {
         font-size: 8px;
         text-align: justify;
         font-style: italic;
-        
+
     }
 
-
+    .logo {
+        position:absolute;
+    }    
     nav {
         height: 8vh;
     }
