@@ -685,7 +685,7 @@ footer {
         flex-direction: column;
         position: absolute;
         top: 50px;
-        left: 300px; /* Align to the right */
+        left: 250px; /* Align to the right */
         width: 150px; /* Adjust width */
         background:transparent;
         border-radius: 8px; /* Rounded corners */
