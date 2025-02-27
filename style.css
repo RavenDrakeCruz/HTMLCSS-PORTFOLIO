@@ -571,7 +571,7 @@ footer {
 /* Mobile View (Phones) */
 @media (max-width: 768px) {
     body{
-        font-size: 14px;
+        font-size: 2px;
         position: absolute;
         overflow-x: hidden;
     }
@@ -594,12 +594,18 @@ footer {
 
     }
 
-    .about-box {
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-width: 5000px; /* Adjust as needed */
+        margin: auto; /* Centering */
+    }
+    
+    .video-container iframe {
         width: 100%;
         height: auto;
-        font-size: 10px;
-        text-align: justify;
-        font-style: italic;
+        aspect-ratio: 16 / 9; /* Ensures proper aspect ratio */
     }
 
     .logo {
