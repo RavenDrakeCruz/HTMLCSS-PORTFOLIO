@@ -571,9 +571,10 @@ footer {
 
 /* Mobile View (Phones) */
 @media (max-width: 768px) {
-    body {
+    body, html{
         font-size: 14px;
         position: absolute;
+        overflow-x: hidden;
     }
 
     .projects-container {
