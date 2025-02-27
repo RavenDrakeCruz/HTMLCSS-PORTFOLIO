@@ -584,6 +584,16 @@ footer {
         height: auto;
     }
 
+    .project-box {
+        width: 100%;
+        height: auto;
+        font-size: 8px;
+        text-align: justify;
+        font-style: italic;
+        
+    }
+
+
     nav {
         height: 8vh;
     }
@@ -628,9 +638,9 @@ footer {
     .nav-container .links {
         display: none;
         flex-direction: column;
-        position: fixed; /* Fix position so it stays in place */
+        position: fixed; 
         top: 50px;
-        right: 20px; /* Keep it on the right */
+        right: 20px; 
         text-align: right;
         z-index: 1000;
         background: transparent;
@@ -650,7 +660,7 @@ footer {
     .nav-container .links.active {
         display: flex;
     }
-    
+
     .hamburg {
         display: block;
         font-size: 24px;
