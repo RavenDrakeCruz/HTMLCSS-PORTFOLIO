@@ -542,8 +542,7 @@ footer {
     display: block;
 }
 
-/* Responsive */
-/* General Responsive Fixes */
+
 @media (max-width: 1024px) {
     .main-container {
         flex-direction: column;
@@ -565,7 +564,7 @@ footer {
     }
 
     .hamburg {
-        display: block;
+        display:none;
     }
 }
 
@@ -595,6 +594,14 @@ footer {
 
     }
 
+    .about-box {
+        width: 100%;
+        height: auto;
+        font-size: 10px;
+        text-align: justify;
+        font-style: italic;
+    }
+
     .logo {
         position:absolute;
     }    
@@ -603,7 +610,7 @@ footer {
     }
 
     .hamburg {
-        display: block;
+        display: none;
         position: absolute;
         top: 15px;
         right: 15px;
@@ -677,7 +684,7 @@ footer {
 }
 
 .hamburg {
-    display: flex;
+    display: none;
     font-size: 24px;
     cursor: pointer;
     position: absolute;
@@ -703,10 +710,10 @@ footer {
         flex-direction: column;
         position: absolute;
         top: 50px;
-        left: 250px; /* Align to the right */
-        width: 150px; /* Adjust width */
+        left: 250px; 
+        width: 150px; 
         background:transparent;
-        border-radius: 8px; /* Rounded corners */
+        border-radius: 8px;
         text-align: center;
         z-index: 1000;
     }
