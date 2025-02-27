@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <title>PLP LOGO ANIMATION Project</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     <nav>
@@ -48,5 +49,16 @@
                 </footer>
         </section>
    <script src="script.js"></script> 
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+
+        function hamburg() {
+            document.querySelector(".dropdown").style.transform = "translateY(0px)";
+        }
+        function cancel() {
+            document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+        }
+    </script>
 </body>
 </html>
